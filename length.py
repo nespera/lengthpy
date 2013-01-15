@@ -1,15 +1,15 @@
-class LengthUnit:
+class _LengthUnit:
 
     def __init__(self, short_name, millimetres):
-        self.short_name = short_name
-        self.millimetres = millimetres 
+        self._short_name = short_name
+        self._millimetres = millimetres 
 
     def __str__(self):
-        return self.short_name
+        return self._short_name
 
-YARD = LengthUnit('yd', 9140)
-METRE = LengthUnit('m', 1000)
-INCH = LengthUnit('in', 254)
+YARD = _LengthUnit('yd', 9140)
+METRE = _LengthUnit('m', 1000)
+INCH = _LengthUnit('in', 254)
 
 class Length:
 
