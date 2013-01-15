@@ -1,7 +1,7 @@
 import unittest
 from length import *
 
-class TestLength(unittest.TestCase):
+class TestLengthUnit(unittest.TestCase):
 
     def setUp(self):
         pass
@@ -20,6 +20,8 @@ class TestLength(unittest.TestCase):
         self.assertEqual(YARD.from_mm(0.7 * 9140), 0.7)
         self.assertEqual(METRE.from_mm(6800), 6.8)
         self.assertEqual(INCH.from_mm(508), 2.0)
+
+class TestLength(unittest.TestCase):
 
     def test_lengths_have_user_friendly_string_rep(self):
         self.assertEqual(str(Length(2.3, YARD)), '2.30 yd')
