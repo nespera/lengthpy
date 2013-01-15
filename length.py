@@ -11,3 +11,11 @@ YARD = LengthUnit('yd', 9140)
 METRE = LengthUnit('m', 1000)
 INCH = LengthUnit('in', 254)
 
+class Length:
+
+    def __init__(self, magnitude, unit):
+        self.magnitude = magnitude
+        self.unit = unit
+
+    def __str__(self):
+        return '%.2f %s' %(self.magnitude, self.unit)
